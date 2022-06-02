@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="slider">
+        <div class="cont-slides">
+            <img src="./imgs/img1.jpg" alt="new york buildings" class="active">
+            <img src="./imgs/img2.jpg" alt="other new york buildings">
+            <img src="./imgs/img3.jpg" alt="yet other new york buildings">
+        </div>
+        <div class="commandes">
+            <button class="left">
+                <img src="./imgs/left.svg" alt="previous image">
+            </button>
+            <button class="right">
+                <img src="./imgs/right.svg" alt="next image">
+            </button>
+        </div>
+        <div class="cercles">
+            <button data-clic="1" class="cercle active-cercle"></button>
+            <button data-clic="2" class="cercle"></button>
+            <button data-clic="3" class="cercle"></button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="cont-btns">
+      <button class="btn-inscription">S'inscrire</button>
+      <button class="btn-connexion">Se connecter</button>
+      <button class="btn-deco">Se déconnecter </button>
+    </div>
+
+    <h1>Bienvenue, inscrivez-vous ou connectez-vous.</h1>
+    <p class="info">Contenu public</p>
+
+
+    <form class="form-inscription">
+
+      <h2>Inscription</h2>
+      <label for="emailInscription">Entrez un email</label>
+      <input type="email" id="emailInscription" class="email-inscription">
+
+      <label for="mdpInscription">Mot de passe</label>
+      <input type="password" id="mdpInscription" class="mdp-inscription">
+
+      <button type="submit">S'inscrire</button>
+
+    </form>
+
+    <form class="form-connexion">
+
+      <h2>Connexion</h2>
+      <label for="emailConnexion">Entrez un email</label>
+      <input type="email" id="emailConnexion" class="email-connexion">
+
+      <label for="mdpConnexion">Mot de passe</label>
+      <input type="password" id="mdpConnexion" class="mdp-connexion">
+
+      <button type="submit">Se connecter</button>
+
+    </form>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js'
+        import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.js' 
+        import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.6.11/firebase-auth.js'
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDGh-8OzeisCfhlIokA9NL_ScXCK-XmXK4",
+          authDomain: "authentification-1b383.firebaseapp.com",
+          projectId: "authentification-1b383",
+          storageBucket: "authentification-1b383.appspot.com",
+          messagingSenderId: "149670092073",
+          appId: "1:149670092073:web:05adf8828b30772106eb38"
+        }
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig)
+
+        const auth = getAuth()
+        const db = getFirestore()
+
+  
+      </script>
+      <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <h1>Quizz Culture Générale !</h1>
+    <div class="container">
+
+        <form class="form-quizz">
+            <div class="question-block">
+                <h4>Qui est l'empereur de France le 2 décembre 1804 ?</h4>
+                <div>
+                    <input type="radio" name="q1" id="clovis" value="a" checked>
+                    <label for="clovis">Clovis</label>
+                </div>
+    
+                <div>
+                    <input type="radio" name="q1" value="b" id="lincoln">
+                    <label for="lincoln">Abraham Lincoln</label>
+                </div>
+    
+                <div>
+                    <input type="radio" name="q1" value="c" id="napo">
+                    <label for="napo">Napoléon Bonaparte</label>
+                </div>
+            </div>
+            
+            <div class="question-block">
+                <h3>Quelle est la date d´indépendance des États-Unis ?</h3>
+                <div>
+                    <input type="radio" name="q2" value="a" id="juillet" checked>
+                    <label for="juillet">4 juillet 1776</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" value="b" id="avril">
+                    <label for="avril">18 avril 1856</label>
+                </div>
+                <div>
+                    <input type="radio" name="q2" id="c">
+                    <label for="juin">30 juin 1925</label>
+                </div>
+            </div>
+    
+            <div class="question-block">
+                <h3>La chute de l´empire Romain se situe en ?</h3>
+                <div>
+                    <input type="radio" name="q3" value="a" id="tard" checked>
+                    <label for="tard">15 ap. J.-C.</label>
+                </div>
+                <div>
+                    <input type="radio" name="q3" value="b" id="entre">
+                    <label for="entre">395 ap. J.-C.</label>
+                </div>
+                <div>
+                    <input type="radio" name="q3" value="c" id="tot">
+                    <label for="tot">-740 av. J.-C.</label>
+                </div>
+            </div>
+    
+            <div class="question-block">
+                <h3>Quelle est la capitale de la Slovénie ?</h3>
+                <div>
+                    <input type="radio" name="q4" value="a" id="lju" checked>
+                    <label for="lju">Ljubljana</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="b" id="bel">
+                    <label for="bel">Belgrade</label>
+                </div>
+                <div>
+                    <input type="radio" name="q4" value="c" id="bra">
+                    <label for="bra">Bratislava</label>
+                </div>
+            </div>
+    
+            <div class="question-block">
+                <h3>Combien d'habitants compte l'Irlande en 2020 ?</h3>
+                <div>
+                    <input type="radio" name="q5" value="a" id="un" checked>
+                    <label for="un">1,365 million</label>
+                </div>
+                <div>
+                    <input type="radio" name="q5" value="b" id="vingt">
+                    <label for="vingt">21 millions</label>
+                </div>
+                <div>
+                    <input type="radio" name="q5" value="c" id="cinq">
+                    <label for="cinq">4,9 millions</label>
+                </div>
+            </div>
+            <button type="submit" id="btn">Validez vos choix !</button>
+        </form>
+
+
+
+        <div id="result">
+            <h2>Cliquez sur 'Validez' pour voir les résultats</h2>
+            <p class="aide"></p>
+            <p class="note"></p>
+        </div>
+    </div>
+</body>
+</html>
